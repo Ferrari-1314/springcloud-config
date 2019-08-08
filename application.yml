@@ -1,0 +1,14 @@
+spring: 
+  profiles:
+    active: 
+    - dev #当前使用的环境
+---
+spring: 
+  profile: dev  #开发环境
+  application: 
+    name: config-server-dev
+---
+spring: 
+  profile: test  #开发环境
+  application: 
+    name: config-server-test
